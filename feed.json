@@ -7,6 +7,213 @@
 	"items": [
 		
 			{
+				"id": "http://adammedcalf.micro.blog/2024/10/23/thom-yorke-and.html",
+				
+				"content_html": "<p><a href=\"https://www.theguardian.com/film/2024/oct/22/thom-yorke-and-julianne-moore-join-thousands-of-creatives-in-ai-warning\">Thom Yorke and Julianne Moore join thousands of creatives in AI warning</a>: Even superstars are concerned about AI companies shovelling up the artistic output of humanity without constraint or compensation.</p>\n",
+				"content_text": "[Thom Yorke and Julianne Moore join thousands of creatives in AI warning](https://www.theguardian.com/film/2024/oct/22/thom-yorke-and-julianne-moore-join-thousands-of-creatives-in-ai-warning): Even superstars are concerned about AI companies shovelling up the artistic output of humanity without constraint or compensation.\n",
+				"date_published": "2024-10-23T23:12:53+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/23/thom-yorke-and.html",
+				"tags": ["Artificial Intelligence","Bad tech","Technology","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/23/new-commission-may.html",
+				
+				"content_html": "<p><a href=\"https://www.theguardian.com/environment/2024/oct/22/new-commission-may-ban-england-water-companies-from-making-a-profit\">New commission may ban English water companies from making a profit</a>: Good: water is both a life essential and a natural monopoly, normal rules of capitalism cannot apply.</p>\n",
+				"content_text": "[New commission may ban English water companies from making a profit](https://www.theguardian.com/environment/2024/oct/22/new-commission-may-ban-england-water-companies-from-making-a-profit): Good: water is both a life essential and a natural monopoly, normal rules of capitalism cannot apply.\n",
+				"date_published": "2024-10-23T09:33:56+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/23/new-commission-may.html",
+				"tags": ["Economics","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/23/two-types-of.html",
+				"title": "Two types of information overload: the situational vs the ambient",
+				"content_html": "<p>I have an information problem. There are 278 books on my &ldquo;Want to read list&rdquo;. There are 1,794 articles saved in my read-later app. There appear to be 2,241 episodes in my podcasts &ldquo;to listen to&rdquo; queue. The knowledge of hundreds of pending unread journal articles put me off ever even opening my collection of them to check.</p>\n<p>Then on the other side of the equation there&rsquo;s the collection of hundred of read items I want to blog about, and several half-written posts about a fraction of them.</p>\n<p>I&rsquo;m somewhat ashamed to say I even started a new RSS reader account on the basis that my collection of feeds felt somewhat unmanageable when all in one place. I guess I&rsquo;m going to have to stop teasing my colleague for starting a new Google mail account because their previous one filled up.</p>\n<p>It&rsquo;s absurd. I&rsquo;ve only got one lifetime, as far as I know. And it&rsquo;s not like these numbers don&rsquo;t grow every single day.</p>\n<p>I know I&rsquo;m not alone in this. <a href=\"https://www.newcartographies.com/p/haystacks-of-needles\">Nicholas Carr writes</a> about two forms of information overload, only one of which is solvable by the standard solution of improving the information filters, search and prioritisation algorithms that are available to us.</p>\n<p>One can intuitively feel this to be true. We have so many more electronic facilities to aid us in sorting through and finding high quality material than we used to - even whilst acknowledging that some of the more famous ones are <a href=\"https://mashable.com/article/google-search-low-quality-research\">perhaps getting worse</a>. But who feels like they have <em>less</em> information overload now than in the past?</p>\n<p>In Carr&rsquo;s view, that&rsquo;s because these filtering systems only solve &ldquo;situational overload&rdquo;</p>\n<blockquote>\n<p>Situational overload is the needle-in-the-haystack problem: You need a particular piece of information — in order to answer a question of one sort or another — and that piece of information is buried in a bunch of other pieces of information.</p>\n</blockquote>\n<p>Many information-sorting technologies, from the introduction of indexes, catalogues and the Dewey Decimal system onwards, have made inroads into this.</p>\n<p>But these systems don&rsquo;t help with &ldquo;ambient overload&rdquo;.</p>\n<blockquote>\n<p>Ambient overload doesn’t involve needles in haystacks. It involves haystack-sized piles of needles.</p>\n<p>We experience ambient overload when we’re surrounded by so much information that is of immediate interest to us that we feel overwhelmed by the neverending pressure of trying to keep up with it all.</p>\n</blockquote>\n<p>This is exactly right. I&rsquo;m not confused as to which handful of my 278 to-read books are actually going to be of interest to me. In principle they all are. I hand-selected them. This is a post-filtered list, full of likely needles; full of signal, not obscured by noise.</p>\n<p>The world&rsquo;s best search isn&rsquo;t going to help me here. In fact, improving the filters we have available to us simply pushes ever-increasing amounts of ever-more interesting content in our direction.</p>\n<p>There are people trying to solve this problem, but no solution that I&rsquo;ve seen feels very satisfying. For example, there are multiple book summarisation services - <a href=\"https://www.blinkist.com/\">Blinkist</a>, <a href=\"https://www.shortform.com/\">Shortform</a> and their ilk - which I&rsquo;ve played with a bit in the past. Whilst they have their uses I don&rsquo;t find them to be an adequate substitute for the original material. Let alone the modern AI based solutions - either the generic &ldquo;Please, chatbot, summarise this book in 2 paragraphs&rdquo; options or the dedicated &ldquo;summarisation services&rdquo;. Many people naturally have ethical concerns about the type of AI they typically use, alongside the ever-present risk that they in fact fail to summarise the content correctly.</p>\n<p>If however we determine that these services do have a legitimate place, then again I feel like - at least for me - they&rsquo;re addressing situational overload. I&rsquo;d be using them as filters for &ldquo;do I want to read the whole thing?&rdquo; rather than as a substitute for &ldquo;I have read the whole thing&rdquo;.</p>\n<p>Of course, if you&rsquo;ve a need to get the basic gist of a book very quickly but have no desire to spend substantial time working through it then those services might potentially work well for that - I haven&rsquo;t checked the efficacy studies! - but that lack of <em>desire</em> isn&rsquo;t the problem I face.</p>\n<p>So what is the solution? Carr doesn&rsquo;t really present one. Perhaps there are none, other than somehow reconciling oneself to be able to happily live whilst giving up on the idea that we could possibly indulge in even a sizeable fraction of the things we&rsquo;re interested in within this new(ish) world of information abundance. Or, as <a href=\"https://gkeenan.co/avgb/hot-take-its-okay-if-we-dont-consume-all-of-the-worlds-information-before-we-die/\">Keenan writes</a>, accepting that &ldquo;It’s okay if we don’t consume all of the world’s information before we die&rdquo;.</p>\n",
+				"content_text": "I have an information problem. There are 278 books on my \"Want to read list\". There are 1,794 articles saved in my read-later app. There appear to be 2,241 episodes in my podcasts \"to listen to\" queue. The knowledge of hundreds of pending unread journal articles put me off ever even opening my collection of them to check.\n\nThen on the other side of the equation there's the collection of hundred of read items I want to blog about, and several half-written posts about a fraction of them.\n\nI'm somewhat ashamed to say I even started a new RSS reader account on the basis that my collection of feeds felt somewhat unmanageable when all in one place. I guess I'm going to have to stop teasing my colleague for starting a new Google mail account because their previous one filled up.\n\nIt's absurd. I've only got one lifetime, as far as I know. And it's not like these numbers don't grow every single day.\n\nI know I'm not alone in this. [Nicholas Carr writes](https://www.newcartographies.com/p/haystacks-of-needles) about two forms of information overload, only one of which is solvable by the standard solution of improving the information filters, search and prioritisation algorithms that are available to us.\n\nOne can intuitively feel this to be true. We have so many more electronic facilities to aid us in sorting through and finding high quality material than we used to - even whilst acknowledging that some of the more famous ones are [perhaps getting worse](https://mashable.com/article/google-search-low-quality-research). But who feels like they have *less* information overload now than in the past?\n\nIn Carr's view, that's because these filtering systems only solve \"situational overload\"\n\n>Situational overload is the needle-in-the-haystack problem: You need a particular piece of information — in order to answer a question of one sort or another — and that piece of information is buried in a bunch of other pieces of information.\n\nMany information-sorting technologies, from the introduction of indexes, catalogues and the Dewey Decimal system onwards, have made inroads into this.\n\nBut these systems don't help with \"ambient overload\".\n\n>Ambient overload doesn’t involve needles in haystacks. It involves haystack-sized piles of needles.\n>\n>We experience ambient overload when we’re surrounded by so much information that is of immediate interest to us that we feel overwhelmed by the neverending pressure of trying to keep up with it all.\n\nThis is exactly right. I'm not confused as to which handful of my 278 to-read books are actually going to be of interest to me. In principle they all are. I hand-selected them. This is a post-filtered list, full of likely needles; full of signal, not obscured by noise.\n\nThe world's best search isn't going to help me here. In fact, improving the filters we have available to us simply pushes ever-increasing amounts of ever-more interesting content in our direction.\n\nThere are people trying to solve this problem, but no solution that I've seen feels very satisfying. For example, there are multiple book summarisation services - [Blinkist](https://www.blinkist.com/), [Shortform](https://www.shortform.com/) and their ilk - which I've played with a bit in the past. Whilst they have their uses I don't find them to be an adequate substitute for the original material. Let alone the modern AI based solutions - either the generic \"Please, chatbot, summarise this book in 2 paragraphs\" options or the dedicated \"summarisation services\". Many people naturally have ethical concerns about the type of AI they typically use, alongside the ever-present risk that they in fact fail to summarise the content correctly.\n\nIf however we determine that these services do have a legitimate place, then again I feel like - at least for me - they're addressing situational overload. I'd be using them as filters for \"do I want to read the whole thing?\" rather than as a substitute for \"I have read the whole thing\". \n\nOf course, if you've a need to get the basic gist of a book very quickly but have no desire to spend substantial time working through it then those services might potentially work well for that - I haven't checked the efficacy studies! - but that lack of *desire* isn't the problem I face.\n\nSo what is the solution? Carr doesn't really present one. Perhaps there are none, other than somehow reconciling oneself to be able to happily live whilst giving up on the idea that we could possibly indulge in even a sizeable fraction of the things we're interested in within this new(ish) world of information abundance. Or, as [Keenan writes](https://gkeenan.co/avgb/hot-take-its-okay-if-we-dont-consume-all-of-the-worlds-information-before-we-die/), accepting that \"It’s okay if we don’t consume all of the world’s information before we die\".\n",
+				"date_published": "2024-10-23T08:35:00+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/23/two-types-of.html",
+				"tags": ["Psychology"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/twelve-million-deportations.html",
+				
+				"content_html": "<p><a href=\"https://snyder.substack.com/p/twelve-million-deportations\">Twelve Million Deportations</a>: Timothy Snyder asks us to think seriously about what would happen if Trump became president and even <em>tried</em> to enact his &lsquo;deport 12 million US residents&rsquo; plan.</p>\n",
+				"content_text": "[Twelve Million Deportations](https://snyder.substack.com/p/twelve-million-deportations): Timothy Snyder asks us to think seriously about what would happen if Trump became president and even _tried_ to enact his 'deport 12 million US residents' plan.\n",
+				"date_published": "2024-10-22T23:06:20+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/twelve-million-deportations.html",
+				"tags": ["Politics","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/its-not-just.html",
+				
+				"content_html": "<p><a href=\"https://mashable.com/article/google-search-low-quality-research\">It&rsquo;s not just you, Google Search really has gotten worse</a>: Researchers find that search engines are getting ever more flooded with nasty SEO product spam sites despite their best efforts.</p>\n",
+				"content_text": "[It's not just you, Google Search really has gotten worse](https://mashable.com/article/google-search-low-quality-research): Researchers find that search engines are getting ever more flooded with nasty SEO product spam sites despite their best efforts.\n",
+				"date_published": "2024-10-22T18:44:54+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/its-not-just.html",
+				"tags": ["Computing","Bad tech","Technology","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/hot-take-its.html",
+				
+				"content_html": "<p><a href=\"https://gkeenan.co/avgb/hot-take-its-okay-if-we-dont-consume-all-of-the-worlds-information-before-we-die/\">Hot take: It’s okay if we don’t consume all of the world’s information before we die</a>: Do we really need to trim <em>every</em> moment of silence out of our podcasts?</p>\n",
+				"content_text": "[Hot take: It’s okay if we don’t consume all of the world’s information before we die](https://gkeenan.co/avgb/hot-take-its-okay-if-we-dont-consume-all-of-the-worlds-information-before-we-die/): Do we really need to trim *every* moment of silence out of our podcasts?\n",
+				"date_published": "2024-10-22T18:40:51+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/hot-take-its.html",
+				"tags": ["Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/haystacks-of-needles.html",
+				
+				"content_html": "<p><a href=\"https://www.newcartographies.com/p/haystacks-of-needles\">Haystacks of Needles</a>: Situational overload vs ambient overload.</p>\n",
+				"content_text": "[Haystacks of Needles](https://www.newcartographies.com/p/haystacks-of-needles): Situational overload vs ambient overload.\n",
+				"date_published": "2024-10-22T18:39:04+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/haystacks-of-needles.html",
+				"tags": ["Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/currently-trying-out.html",
+				
+				"content_html": "<p>Currently trying out a combo of <a href=\"https://www.freshrss.org/\">FreshRSS</a> and <a href=\"https://netnewswire.com/\">NetNewsWire</a> to experience the joy (?) of aggregating, managing and perusing RSS feeds without relying on someone else&rsquo;s cloud service.</p>\n<p><a href=\"https://www.freshrss.org/\">FreshRSS</a> is &ldquo;A free, self-hostable feed aggregator&rdquo;. Think <a href=\"https://feedly.com/news-reader\">Feedly</a>, Google Reader (RIP) et al. but self-hostable, open source, private (if you want it to be) and subscription-free. You can access it via the web, desktop or mobile. Here&rsquo;s a screenshot from their site.</p>\n<img src=\"https://cdn.uploads.micro.blog/69139/2024/frss.webp\" width=\"600\" height=\"337\" alt=\"A screenshot of FreshRSS displaying various feeds.\">\r\n<p><a href=\"https://netnewswire.com/\">NetNewsWire</a> is one of many client RSS apps that are out there that can sync with FreshRSS if you prefer reading your feeds in an app. This one has the selling point being both free, open source and, again, not infused with features to sell your brain to the highest bidder.</p>\n<img src=\"https://cdn.uploads.micro.blog/69139/2024/nnw.png\" width=\"300\" height=\"532\" alt=\"A screenshot of the NewNewsWire app displaying various feeds.\">\r\n<p>There are of course several similar options if those two don&rsquo;t float your boat.</p>\n",
+				"content_text": "Currently trying out a combo of [FreshRSS](https://www.freshrss.org/) and [NetNewsWire](https://netnewswire.com/) to experience the joy (?) of aggregating, managing and perusing RSS feeds without relying on someone else's cloud service.\r\n\r\n[FreshRSS](https://www.freshrss.org/) is \"A free, self-hostable feed aggregator\". Think [Feedly](https://feedly.com/news-reader), Google Reader (RIP) et al. but self-hostable, open source, private (if you want it to be) and subscription-free. You can access it via the web, desktop or mobile. Here's a screenshot from their site.\r\n\r\n<img src=\"https://cdn.uploads.micro.blog/69139/2024/frss.webp\" width=\"600\" height=\"337\" alt=\"A screenshot of FreshRSS displaying various feeds.\">\r\n\r\n[NetNewsWire](https://netnewswire.com/) is one of many client RSS apps that are out there that can sync with FreshRSS if you prefer reading your feeds in an app. This one has the selling point being both free, open source and, again, not infused with features to sell your brain to the highest bidder.\r\n\r\n<img src=\"https://cdn.uploads.micro.blog/69139/2024/nnw.png\" width=\"300\" height=\"532\" alt=\"A screenshot of the NewNewsWire app displaying various feeds.\">\r\n\r\nThere are of course several similar options if those two don't float your boat.\n",
+				"date_published": "2024-10-22T18:20:34+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/currently-trying-out.html",
+				"tags": ["Computing","Technology","Useful software","Privacy"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/why-you-should.html",
+				
+				"content_html": "<p><a href=\"https://aaronrosspowell.com/2024/10/19/why-you-should.html\">Why you should ditch social media for a (micro)blog</a>: Yes, I&rsquo;m a big fan of both the general concept and the specific product Aaron mentions.</p>\n",
+				"content_text": "[Why you should ditch social media for a (micro)blog](https://aaronrosspowell.com/2024/10/19/why-you-should.html): Yes, I'm a big fan of both the general concept and the specific product Aaron mentions.\n",
+				"date_published": "2024-10-22T18:13:37+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/why-you-should.html",
+				"tags": ["Computing","Social media","Technology","Useful software","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/a-list-of.html",
+				
+				"content_html": "<p><a href=\"https://greycoder.com/a-list-of-text-only-new-sites/\">A List Of Text-Only &amp; Minimalist News Sites</a>: If you prefer getting your news in a format devoid of splashy migraine-inducing colour extravaganzas then this page will help.</p>\n",
+				"content_text": "[A List Of Text-Only & Minimalist News Sites](https://greycoder.com/a-list-of-text-only-new-sites/): If you prefer getting your news in a format devoid of splashy migraine-inducing colour extravaganzas then this page will help. \n",
+				"date_published": "2024-10-22T16:09:07+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/a-list-of.html",
+				"tags": ["Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/found-a-new.html",
+				
+				"content_html": "<p>Found a new creepy critter in the garden, just in time for the Halloween season.</p>\n<p><a href=\"https://cdn.uploads.micro.blog/69139/2024/595677b0-75f9-4eb5-840c-930ce0878a94.jpg\" \n   class=\"glightbox\"\n   data-gallery=\"a24202cf2d2a9f12c21eae628f4678bc\"\n    title=\"A weird-looking garden spider\" \n>\n  <img src =\"https://cdn.uploads.micro.blog/69139/2024/595677b0-75f9-4eb5-840c-930ce0878a94.jpg\" \n       style=\"border-radius: 5px; max-width: 100%\"\n       alt=\"Auto-generated description: A close-up view of a fuzzy spider crawling on a wooden surface.\" \n       \n          title=\"A weird-looking garden spider\"\n        \n  />\n</a>\n\n</p>\n<p>My phone believes this to be an <a href=\"https://en.wikipedia.org/wiki/Araneus_quadratus\">Araneus Quadratus</a>, also known as a &ldquo;four-spot orb-weaver&rdquo;.</p>\n",
+				"content_text": "Found a new creepy critter in the garden, just in time for the Halloween season.\r\n\r\n![Auto-generated description: A close-up view of a fuzzy spider crawling on a wooden surface.](https://cdn.uploads.micro.blog/69139/2024/595677b0-75f9-4eb5-840c-930ce0878a94.jpg \"A weird-looking garden spider\")\r\n\r\nMy phone believes this to be an [Araneus Quadratus](https://en.wikipedia.org/wiki/Araneus_quadratus), also known as a \"four-spot orb-weaver\".\n",
+				"date_published": "2024-10-22T11:48:42+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/found-a-new.html",
+				"tags": ["Photos"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/why-changes-to.html",
+				
+				"content_html": "<p><a href=\"https://techcrunch.com/2024/10/18/why-changes-to-the-block-on-elon-musks-x-are-driving-users-away/\">Why changes to the block on Elon Musk&rsquo;s X are driving users away</a>: Musk doesn&rsquo;t believe block buttons should block.</p>\n",
+				"content_text": "[Why changes to the block on Elon Musk's X are driving users away](https://techcrunch.com/2024/10/18/why-changes-to-the-block-on-elon-musks-x-are-driving-users-away/): Musk doesn't believe block buttons should block.\n",
+				"date_published": "2024-10-22T10:45:24+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/why-changes-to.html",
+				"tags": ["Bad tech","Social media","Technology","Privacy","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/why-trumps-staged.html",
+				
+				"content_html": "<p><a href=\"https://www.msnbc.com/rachel-maddow-show/maddowblog/difference-work-trumps-staged-mcdonalds-theatrics-rcna176365\">Why Trump’s staged McDonald’s theatrics don&rsquo;t count as work</a>: Obviously, Trump&rsquo;s mini-shift at McDonalds was <em>extremely</em> staged.</p>\n",
+				"content_text": "[Why Trump’s staged McDonald’s theatrics don't count as work](https://www.msnbc.com/rachel-maddow-show/maddowblog/difference-work-trumps-staged-mcdonalds-theatrics-rcna176365): Obviously, Trump's mini-shift at McDonalds was _extremely_ staged.\n",
+				"date_published": "2024-10-22T09:44:05+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/why-trumps-staged.html",
+				"tags": ["Politics","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/22/online-safety-and.html",
+				
+				"content_html": "<p><a href=\"https://werd.io/2024/online-safety-and-the-great-decentralization-the-perils-and-promises\">Online Safety and the “Great Decentralization” – The Perils and Promises of Federated Social Media</a>: Is the Fediverse in need of better tooling around moderation?</p>\n",
+				"content_text": "[Online Safety and the “Great Decentralization” – The Perils and Promises of Federated Social Media](https://werd.io/2024/online-safety-and-the-great-decentralization-the-perils-and-promises): Is the Fediverse in need of better tooling around moderation?\n",
+				"date_published": "2024-10-22T09:38:53+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/22/online-safety-and.html",
+				"tags": ["Computing","Bad tech","Social media","Technology","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/all-what-is.html",
+				
+				"content_html": "<p><a href=\"https://www.newcartographies.com/p/all-what-is-delicious-to-man\">All What Is Delicious to Man</a>: Today&rsquo;s implausible vision of superabundance is a lot grimmer than the one that they were promised in the 1830s.</p>\n",
+				"content_text": "[All What Is Delicious to Man](https://www.newcartographies.com/p/all-what-is-delicious-to-man): Today's implausible vision of superabundance is a lot grimmer than the one that they were promised in the 1830s.\n",
+				"date_published": "2024-10-21T22:48:58+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/all-what-is.html",
+				"tags": ["Artificial Intelligence","Economics","Technology","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/what-is-genomic.html",
+				
+				"content_html": "<p><a href=\"https://www.theguardian.com/science/2024/oct/18/what-is-genomic-prediction-and-can-embryos-really-be-screened-for-iq\">What is genomic prediction and can embryos really be ‘screened for IQ’?</a>: Even if it wasn&rsquo;t a terrible idea, it&rsquo;s not clear that we know how to do it effectively.</p>\n",
+				"content_text": "[What is genomic prediction and can embryos really be ‘screened for IQ’?](https://www.theguardian.com/science/2024/oct/18/what-is-genomic-prediction-and-can-embryos-really-be-screened-for-iq): Even if it wasn't a terrible idea, it's not clear that we know how to do it effectively.\n",
+				"date_published": "2024-10-21T15:04:33+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/what-is-genomic.html",
+				"tags": ["Science","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/google-moves-to.html",
+				
+				"content_html": "<p><a href=\"https://techcrunch.com/2023/12/16/google-geofence-warrants-law-enforcement-privacy/\">Google moves to end geofence warrants, a surveillance problem it largely created</a>: Geofence warrants require companies to hand over data about everyone that was using a mobile device within a given geographical region - a type of reverse search warrant.</p>\n",
+				"content_text": "[Google moves to end geofence warrants, a surveillance problem it largely created](https://techcrunch.com/2023/12/16/google-geofence-warrants-law-enforcement-privacy/): Geofence warrants require companies to hand over data about everyone that was using a mobile device within a given geographical region - a type of reverse search warrant.\n",
+				"date_published": "2024-10-21T11:25:35+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/google-moves-to.html",
+				"tags": ["Technology","Privacy","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/the-internet-of.html",
+				
+				"content_html": "<p><a href=\"https://www.cps.gov.uk/cps/news/internet-things-helping-provide-key-evidence-criminal-trials\">The ‘Internet of Things’ helping to provide key evidence in criminal trials</a>: The Crown Prosecution Service&rsquo;s take on the utility of our data-gathering gadgets.</p>\n",
+				"content_text": "[The ‘Internet of Things’ helping to provide key evidence in criminal trials](https://www.cps.gov.uk/cps/news/internet-things-helping-provide-key-evidence-criminal-trials): The Crown Prosecution Service's take on the utility of our data-gathering gadgets.\n",
+				"date_published": "2024-10-21T11:20:17+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/the-internet-of.html",
+				"tags": ["Law","Crime","Technology","Privacy","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/governments-spying-on.html",
+				
+				"content_html": "<p><a href=\"https://www.reuters.com/technology/cybersecurity/governments-spying-apple-google-users-through-push-notifications-us-senator-2023-12-06/\">Governments spying on Apple, Google users through push notifications - US senator</a>: Inevitably the centralisation and lack of encryption around push notifications makes them a useful source of surveillance material.</p>\n",
+				"content_text": "[Governments spying on Apple, Google users through push notifications - US senator](https://www.reuters.com/technology/cybersecurity/governments-spying-apple-google-users-through-push-notifications-us-senator-2023-12-06/): Inevitably the centralisation and lack of encryption around push notifications makes them a useful source of surveillance material.\n",
+				"date_published": "2024-10-21T11:18:53+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/governments-spying-on.html",
+				"tags": ["Bad tech","Technology","Leaks and hacks","Privacy","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/governments-are-using.html",
+				
+				"content_html": "<p><a href=\"https://carnegieendowment.org/posts/2021/07/governments-are-using-spyware-on-citizens-can-they-be-stopped\">Governments Are Using Spyware on Citizens. Can They Be Stopped?</a>: Companies like the NSO Group are happy to sell commercial spyware to governments who will predictably use it for bad things.</p>\n",
+				"content_text": "[Governments Are Using Spyware on Citizens. Can They Be Stopped?](https://carnegieendowment.org/posts/2021/07/governments-are-using-spyware-on-citizens-can-they-be-stopped): Companies like the NSO Group are happy to sell commercial spyware to governments who will predictably use it for bad things.\n",
+				"date_published": "2024-10-21T11:16:24+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/governments-are-using.html",
+				"tags": ["Bad tech","Technology","Leaks and hacks","Privacy","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/the-wrongness-of.html",
+				"title": "The wrongness of 'If you've got nothing to hide then you've nothing to fear'",
+				"content_html": "<p>&ldquo;If you&rsquo;ve got nothing to hide then you&rsquo;ve nothing to fear&rdquo; is a common response to those of us who worry about the ever-increasing rise of systematic and universal surveillance and the peel-back of privacy.</p>\n<p>It&rsquo;s snappy and intuitive. But wrong. I prefer one of the following constructions.</p>\n<p>From Edward Snowden&rsquo;s autobiography - at least that&rsquo;s where I think I read it? It&rsquo;s certainly <a href=\"https://www.goodreads.com/quotes/7308507-arguing-that-you-don-t-care-about-the-right-to-privacy\">something he said</a>:</p>\n<blockquote>\n<p>Arguing that you don&rsquo;t care about the right to privacy because you have nothing to hide is no different than saying you don&rsquo;t care about free speech because you have nothing to say.</p>\n</blockquote>\n<p>From Shoshana Zuboff&rsquo;s pivotal book, &ldquo;<a href=\"https://thebraindumpblog.com/2024/10/04/the-age-of.html\">The Age of Surveillance Capitalism</a>&quot;:</p>\n<blockquote>\n<p>The real psychological truth is this: If you’ve got nothing to hide, you are nothing.</p>\n</blockquote>\n<p>Privacy is a right. <a href=\"https://www.coe.int/en/web/impact-convention-human-rights/right-to-privacy\">The European Convention on Human Rights</a> agrees, as does the<a href=\"https://www.un.org/en/about-us/universal-declaration-of-human-rights\"> UN Declaration of Human Rights</a>.</p>\n<p>That said, such legislation is often thought of as targeting the potential for governmental overreach. This may not be the primary concern for the majority of us in a world where it&rsquo;s <a href=\"https://thebraindumpblog.com/2024/10/04/the-age-of.html\">primarily capitalists</a> that are capable of and desperate to know what we&rsquo;re up to (largely so that they can change it). In any case, governments <a href=\"https://www.reuters.com/technology/cybersecurity/governments-spying-apple-google-users-through-push-notifications-us-senator-2023-12-06/\">often</a> <a href=\"https://carnegieendowment.org/posts/2021/07/governments-are-using-spyware-on-citizens-can-they-be-stopped\">rely</a> <a href=\"https://techcrunch.com/2023/12/16/google-geofence-warrants-law-enforcement-privacy/\">on</a>  the technology capitalists for their surveillance work; there&rsquo;s no clear dividing line.</p>\n<p>Some people are only able to thrive - perhaps only stay alive - because they have privacy. This isn&rsquo;t only theoretical. The LGBTQ community, particularly within countries with outrageously repressive laws and norms around the subject, provides <a href=\"https://privacyinternational.org/news-analysis/2782/communities-risk-how-security-fails-are-endangering-lbgtiq-community\">an obvious example</a>.</p>\n<p>Via <a href=\"https://www.theverge.com/2018/4/25/17279270/lgbtq-dating-apps-egypt-illegal-human-rights\">The Verge</a>:</p>\n<blockquote>\n<p>As LGBTQ Egyptians flock to apps like Grindr, Hornet, and Growlr, they face an unprecedented threat from police and blackmailers who use the same apps to find targets. The apps themselves have become both evidence of a crime and a means of resistance.</p>\n</blockquote>\n<p>This might not be the case for more privileged folk for whom little immediate drama might result if our behaviour or implied thoughts were to be revealed. But when de-valuing the right to privacy on the basis that you don&rsquo;t think that (right now) you have anything to hide from any institution that might wish to surveil you, you also implicitly imperil the right to privacy for other people, for those to whom it may be more acutely important.</p>\n<p>Plus rules change. Norms alter. Over in the US, when the <a href=\"https://www.npr.org/2022/06/24/1102305878/supreme-court-abortion-roe-v-wade-decision-overturn\">Roe vs Wade decision was cruelly overturned</a> some folk who previously may have felt little concern about certain aspects of their data privacy suddenly had a potential new reason to care what happened to the data associated with <a href=\"https://wjla.com/news/local/supreme-court-decision-roe-v-wade-tech-surveillance-pregnancy-abortion-menstrual-period-cycle-tracker-apps-data-evidence-health-providers-agree-terms-conditions-egal-perspectives-subpoenaed-against-legal-action-women-vulnerable-draft-opinion-privacy\">period tracking apps</a>.</p>\n<p>There have been several instances of, for instance, the data associated with people&rsquo;s <a href=\"https://www.newstatesman.com/science-tech/2016/08/how-your-google-searches-can-be-used-against-you-court\">web search history</a> or <a href=\"https://www.independent.co.uk/tech/amazon-echo-alexa-evidence-murder-case-a8633551.html\">voice assistant usage</a> being used in their legal prosecution. Over here in the UK, the <a href=\"https://www.cps.gov.uk\">British Crown Prosecution service</a> makes it clear this is a move both intentional and expanding, <a href=\"https://www.cps.gov.uk/about-cps\">writing that</a>:</p>\n<blockquote>\n<p>Digital devices like smart doorbells, dashcam footage, car GPS systems and even Amazon Alexas are providing increasingly more evidence in criminal trials, the Director of Public Prosecutions (DPP) said in a speech today.</p>\n</blockquote>\n<p>Some will argue that this is a good thing, making it easier to prove criminal behaviour, more likely that victims of crime will see justice. Others will fear that, even so, this may not be the only use your personal data will be put to.</p>\n",
+				"content_text": "\"If you've got nothing to hide then you've nothing to fear\" is a common response to those of us who worry about the ever-increasing rise of systematic and universal surveillance and the peel-back of privacy.\r\n\r\nIt's snappy and intuitive. But wrong. I prefer one of the following constructions.\r\n\r\nFrom Edward Snowden's autobiography - at least that's where I think I read it? It's certainly [something he said](https://www.goodreads.com/quotes/7308507-arguing-that-you-don-t-care-about-the-right-to-privacy):\r\n\r\n>Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.\r\n\r\nFrom Shoshana Zuboff's pivotal book, \"[The Age of Surveillance Capitalism](https://thebraindumpblog.com/2024/10/04/the-age-of.html)\":\r\n\r\n> The real psychological truth is this: If you’ve got nothing to hide, you are nothing.\r\n\r\nPrivacy is a right. [The European Convention on Human Rights](https://www.coe.int/en/web/impact-convention-human-rights/right-to-privacy) agrees, as does the[ UN Declaration of Human Rights](https://www.un.org/en/about-us/universal-declaration-of-human-rights).\r\n\r\nThat said, such legislation is often thought of as targeting the potential for governmental overreach. This may not be the primary concern for the majority of us in a world where it's [primarily capitalists](https://thebraindumpblog.com/2024/10/04/the-age-of.html) that are capable of and desperate to know what we're up to (largely so that they can change it). In any case, governments [often](https://www.reuters.com/technology/cybersecurity/governments-spying-apple-google-users-through-push-notifications-us-senator-2023-12-06/) [rely](https://carnegieendowment.org/posts/2021/07/governments-are-using-spyware-on-citizens-can-they-be-stopped) [on](https://techcrunch.com/2023/12/16/google-geofence-warrants-law-enforcement-privacy/)  the technology capitalists for their surveillance work; there's no clear dividing line.\r\n\r\nSome people are only able to thrive - perhaps only stay alive - because they have privacy. This isn't only theoretical. The LGBTQ community, particularly within countries with outrageously repressive laws and norms around the subject, provides [an obvious example](https://privacyinternational.org/news-analysis/2782/communities-risk-how-security-fails-are-endangering-lbgtiq-community).\r\n\r\nVia [The Verge](https://www.theverge.com/2018/4/25/17279270/lgbtq-dating-apps-egypt-illegal-human-rights):\r\n\r\n> As LGBTQ Egyptians flock to apps like Grindr, Hornet, and Growlr, they face an unprecedented threat from police and blackmailers who use the same apps to find targets. The apps themselves have become both evidence of a crime and a means of resistance.\r\n\r\nThis might not be the case for more privileged folk for whom little immediate drama might result if our behaviour or implied thoughts were to be revealed. But when de-valuing the right to privacy on the basis that you don't think that (right now) you have anything to hide from any institution that might wish to surveil you, you also implicitly imperil the right to privacy for other people, for those to whom it may be more acutely important.\r\n\r\nPlus rules change. Norms alter. Over in the US, when the [Roe vs Wade decision was cruelly overturned](https://www.npr.org/2022/06/24/1102305878/supreme-court-abortion-roe-v-wade-decision-overturn) some folk who previously may have felt little concern about certain aspects of their data privacy suddenly had a potential new reason to care what happened to the data associated with [period tracking apps](https://wjla.com/news/local/supreme-court-decision-roe-v-wade-tech-surveillance-pregnancy-abortion-menstrual-period-cycle-tracker-apps-data-evidence-health-providers-agree-terms-conditions-egal-perspectives-subpoenaed-against-legal-action-women-vulnerable-draft-opinion-privacy).\r\n\r\nThere have been several instances of, for instance, the data associated with people's [web search history](https://www.newstatesman.com/science-tech/2016/08/how-your-google-searches-can-be-used-against-you-court) or [voice assistant usage](https://www.independent.co.uk/tech/amazon-echo-alexa-evidence-murder-case-a8633551.html) being used in their legal prosecution. Over here in the UK, the [British Crown Prosecution service](https://www.cps.gov.uk) makes it clear this is a move both intentional and expanding, [writing that](https://www.cps.gov.uk/about-cps):\r\n\r\n>Digital devices like smart doorbells, dashcam footage, car GPS systems and even Amazon Alexas are providing increasingly more evidence in criminal trials, the Director of Public Prosecutions (DPP) said in a speech today.\r\n\r\nSome will argue that this is a good thing, making it easier to prove criminal behaviour, more likely that victims of crime will see justice. Others will fear that, even so, this may not be the only use your personal data will be put to.\n",
+				"date_published": "2024-10-21T11:13:35+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/the-wrongness-of.html",
+				"tags": ["Bad tech","Privacy"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/21/the-subprime-ai.html",
+				
+				"content_html": "<p><a href=\"https://www.wheresyoured.at/subprimeai/\">The Subprime AI Crisis</a>: Ed Zitron worries about what happens when the unprofitability of the current generative AI business becomes unsustainable.</p>\n",
+				"content_text": "[The Subprime AI Crisis](https://www.wheresyoured.at/subprimeai/): Ed Zitron worries about what happens when the unprofitability of the current generative AI business becomes unsustainable. \n",
+				"date_published": "2024-10-21T00:02:27+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/21/the-subprime-ai.html",
+				"tags": ["Artificial Intelligence","Bad tech","Economics","Technology","Linklog"]
+			},
+			{
+				"id": "http://adammedcalf.micro.blog/2024/10/20/get-me-out.html",
+				
+				"content_html": "<p><a href=\"https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/\">Get Me Out Of Data Hell</a>: The day Nikhil Suresh&rsquo;s software engineering work pushed him so far into the pain zone that he has to quit there and then.</p>\n",
+				"content_text": "[Get Me Out Of Data Hell](https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/): The day Nikhil Suresh's software engineering work pushed him so far into the pain zone that he has to quit there and then.\n",
+				"date_published": "2024-10-20T14:54:04+01:00",
+				"url": "https://thebraindumpblog.com/2024/10/20/get-me-out.html",
+				"tags": ["Bad tech","Technology","The workplace","Linklog"]
+			},
+			{
 				"id": "http://adammedcalf.micro.blog/2024/10/20/ban-smacking-in.html",
 				
 				"content_html": "<p><a href=\"https://www.theguardian.com/news/2024/oct/19/ban-smacking-in-england-now-says-childrens-commissioner\">Ban smacking in England now, says children’s commissioner</a>: Proposal to ban smacking one&rsquo;s child in England, similarly to existing Scottish and Welsh legislation.</p>\n",
@@ -63,8 +270,8 @@
 			{
 				"id": "http://adammedcalf.micro.blog/2024/10/19/090300.html",
 				
-				"content_html": "<p><a href=\"https://www.eleanorkonik.com/p/a-personal-take-on-using-llms\">https://www.eleanorkonik.com/p/a-personal-take-on-using-llms</a>: Eleanor Konik&rsquo;s view on when she finds it reasonable to use large language models.</p>\n",
-				"content_text": "[https://www.eleanorkonik.com/p/a-personal-take-on-using-llms](https://www.eleanorkonik.com/p/a-personal-take-on-using-llms): Eleanor Konik's view on when she finds it reasonable to use large language models.\n",
+				"content_html": "<p><a href=\"https://www.eleanorkonik.com/p/a-personal-take-on-using-llms\">A Personal Take on Using LLMs</a>: Eleanor Konik&rsquo;s view on when she finds it reasonable to use large language models.</p>\n",
+				"content_text": "[A Personal Take on Using LLMs](https://www.eleanorkonik.com/p/a-personal-take-on-using-llms): Eleanor Konik's view on when she finds it reasonable to use large language models.\n",
 				"date_published": "2024-10-19T09:03:00+01:00",
 				"url": "https://thebraindumpblog.com/2024/10/19/090300.html",
 				"tags": ["Artificial Intelligence","Linklog"]
@@ -110,7 +317,7 @@
 				
 				"content_html": "<p>Added a few more books to my absolutely unrealistic &ldquo;<a href=\"https://thebraindumpblog.com/2023/12/29/some-books-id.html\">Books about AI I want to read</a>&rdquo; list.</p>\n",
 				"content_text": "Added a few more books to my absolutely unrealistic \"[Books about AI I want to read](https://thebraindumpblog.com/2023/12/29/some-books-id.html)\" list.\n",
-				"date_published": "2024-10-17T12:59:34+00:00",
+				"date_published": "2024-10-17T13:59:34+01:00",
 				"url": "https://thebraindumpblog.com/2024/10/17/added-a-few.html",
 				"tags": ["Computing","Artificial Intelligence","Books","Technology"]
 			},
@@ -128,7 +335,7 @@
 				
 				"content_html": "<p><a href=\"https://www.theguardian.com/world/2024/oct/16/revealed-international-race-science-network-secretly-funded-by-us-tech-boss\">Revealed: International ‘race science’ network secretly funded by US tech boss</a>: Andrew Conru previously gave &gt;$1 million to the &lsquo;Human Diversity Foundation&rsquo;.</p>\n",
 				"content_text": "[Revealed: International ‘race science’ network secretly funded by US tech boss](https://www.theguardian.com/world/2024/oct/16/revealed-international-race-science-network-secretly-funded-by-us-tech-boss): Andrew Conru previously gave >$1 million to the 'Human Diversity Foundation'.\n",
-				"date_published": "2024-10-17T10:32:04+00:00",
+				"date_published": "2024-10-17T11:32:04+01:00",
 				"url": "https://thebraindumpblog.com/2024/10/17/revealed-international-race.html",
 				"tags": ["Politics","Linklog"]
 			},
