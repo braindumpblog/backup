@@ -24,6 +24,137 @@
 	
 	  <div class="h-entry">
 		
+
+		<a href="https://thebraindumpblog.com/2026/02/17/the-left-is-missing-out.html" class="u-url"><time class="dt-published" datetime="2026-02-17 07:32:57 &#43;0000">Feb 17, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://www.transformernews.ai/p/the-left-is-missing-out-on-ai-sanders-doctorow-bender-bores">The left is missing out on AI</a>: &lsquo;&hellip;ceding debate about a threat and opportunity to the right.&rsquo;</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://thebraindumpblog.com/2026/02/16/how-to-archive-even-paid.html">How to archive even paid Substacks - converting them into an eBook</a></h1>
+		
+
+		<a href="https://thebraindumpblog.com/2026/02/16/how-to-archive-even-paid.html" class="u-url"><time class="dt-published" datetime="2026-02-16 11:08:30 &#43;0000">Feb 16, 2026</time></a>
+
+		<div class="e-content">
+			 <p>In recent years, a sizeable amount of great writers, professional or otherwise, have started sharing their wares via Substack. Substack is billed as a platform that lets you write and monetise email newsletters, although any content is generally a;sp available via the web and, <a href="https://thebraindumpblog.com/2022/09/01/im-sure-im.html">sadly for the free stuff only, RSS</a>.</p>
+<p>Firstly, I wanted to caveat that there are some good arguments against promoting the use of Substack as a platform.</p>
+<p><a href="https://www.anildash.com/2024/11/19/dont-call-it-a-substack/">Anil Dash begs writers</a> to not refer to their body of work as &ldquo;a Substack&rdquo; and be wary of their attempt to control your audience and distribution Then there&rsquo;s the fact that by giving your attention and money to Substack you are inadvertently helping fund a platform that <a href="https://www.theguardian.com/media/2026/feb/07/revealed-how-substack-makes-money-from-hosting-nazi-newsletters">appears happy to profit</a> from hosting literal Nazi newsletters. This has caused some <a href="https://www.platformer.news/why-platformer-is-leaving-substack/">popular</a>  <a href="https://www.platformer.news/why-platformer-is-leaving-substack/">outlets</a> to eschew Substack for other options. But the sad truth is that if you want to read the work of certain authors it&rsquo;s currently Substack or nothing, so you&rsquo;ll have to decide for yourself.</p>
+<p>Assuming one does want to get involved, or at least read a given outlet&rsquo;s back catalogue before quitting the platform oneself, it would be nice to be able to both 1) search and archive the content you care about forever - the internet is, after all, <a href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/">notoriously ephemeral</a>, and 2) be able to read it in the manner that you prefer to, even if that manner is &ldquo;not connected to the internet and logged into the potentially intrusive substack.com website experience&rdquo;.</p>
+<p>Personally, for longer-form content I prefer to read it on an eReader, something that I&rsquo;m not aware is easily possible with Substack by default. I would basically like an eBook that is the Substack writer&rsquo;s content, 1 chapter per post, in chronological order to work my way through.</p>
+<p>Whilst this is definitely not functionality native to Substack, thanks to some generous open source software writers, I found a way to do this, even for paid Substacks. Note that this method won&rsquo;t get you the paid content from Substacks that you don&rsquo;t pay for! It&rsquo;s not a hack. And neither should it. But it <em>will</em> let you extract and reformat the content you have already paid for as you wish.</p>
+<p>There&rsquo;s two phases. First, downloading the all the relevant content of a Substack publication into an archive. Second, convert that archive into an ebook, for which here I basically mean an <a href="https://en.wikipedia.org/wiki/EPUB">epub</a> file given that format is easy to use with all the common eReaders that I&rsquo;m aware of. Of course if you just want a local copy of the Substack for archival or offline purposes then you could stop after step 1.</p>
+<p>Here&rsquo;s what worked for me:</p>
+<h2 id="step-1-download-a-local-copy-of-all-the-relevant-substack-posts">Step 1: Download a local copy of all the relevant Substack posts.</h2>
+<p>For this we can use Alex Ferrari&rsquo;s free and open-source <a href="https://github.com/alexferrari88/sbstck-dl">Substack Downloader</a>. This is a command-line tool developed precisely for this purpose. It works on Windows, Linux and the Mac. I used the Windows version, simply downloading the latest .exe file from the repo&rsquo;s <a href="https://github.com/alexferrari88/sbstck-dl/releases">releases page</a>.</p>
+<p>Once you&rsquo;ve got the  <code>sbstck-dl-win-amd64.exe</code> saved you&rsquo;re ready to go. I renamed my copy to the shorter name  <code>sbstck-dl</code> for convenience as that&rsquo;s what the documentation refers to. But you don&rsquo;t have to do that if you don&rsquo;t mind typing out the longer exe name each time.</p>
+<p>The <a href="https://github.com/alexferrari88/sbstck-dl">documentation</a> is on the repo&rsquo;s home page. You can use it to download either a single Substack post or a set of up to all the posts from a particular Substack publication. I wanted the latter.</p>
+<p>Open a command prompt in the folder that you the <code>sbstck-dl</code> file is in so you can get to work using it.</p>
+<p>First, just to test it was working, I used the list parameter to list, rather than download all the posts. In my below examples I&rsquo;ll use &ldquo;<a href="https://national.thelead.uk/">The Lead</a>&rdquo;, url <a href="https://national.thelead.uk/">https://national.thelead.uk/</a>,  as my example of a Substack, but of course you can use anything you know to be Substack based.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl list --url https://national.thelead.uk/
+</code></pre></div><p>Once you&rsquo;re read to download, the most basic use of the command is:</p>
+<pre tabindex="0"><code>sbstck-dl download  --url https://national.thelead.uk/
+</code></pre><p>That will simply download local HTML copies of all the free posts in the publication. It&rsquo;s as simple as that! But there are various parameters you can use to make the output more appropriate to your specific needs, as well as get the paid posts of any Substack that you already have a paid subscription for.</p>
+<h3 id="controlling-what-exactly-is-downloaded">Controlling what exactly is downloaded</h3>
+<p>By default the above will retrieve all the text of the posts. When you open them you&rsquo;ll still see the pictures and attachments, but they&rsquo;re being pulled from their original online location. If Substack was to delete them they&rsquo;d be gone.</p>
+<p>You can use parameters <code>--download-images</code> and <code>--download-files</code> to grab a local copy, as well as have the local HTML files containing the text of the Substack on your computer rewritten to refer to the downloaded images.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download --url https://national.thelead.uk/ --download-images --download-files
+</code></pre></div><p>You can control the size of the images downloaded with the <code>--image-quality</code> parameter, which takes values of high, medium or low. Personally given I&rsquo;m mostly reading articles where the graphics are largely incidental on a black-and-white ereader I find low is usually fine.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download --url https://national.thelead.uk/ --download-images --image-quality <span style="color:#e6db74">&#34;medium&#34;</span>
+</code></pre></div><p>Perhaps you don&rsquo;t want all the posts ever written! Especially for a news site like my example that might be 1) a lot of posts, and 2) some of which are less relevant. You can download posts after a certain date like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/ --after <span style="color:#e6db74">&#34;2026-01-05&#34;</span>
+</code></pre></div><p>There&rsquo;s an equivalent <code>--before</code> parameter you can use in the same way if you want.</p>
+<p>By default everything downloads to the folder you are in when you run the command, with subfolders set up for images and attachments. If you prefer the output to end up somewhere else you can use the <code>-o</code>  flag. Here&rsquo;s how to have things end up in the subfolder &ldquo;downloads&rdquo; for instance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/ -o <span style="color:#e6db74">&#34;./downloads&#34;</span>
+</code></pre></div><p>One particularly great feature is the <code>--create-archive</code> parameter. If you use that then as well as all the individual posts downloading, the software will create a nice index page that provides a lovely list of posts and links to them. You can then open that in your web browser to navigate through the stories rather than open each one individually.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/ --create-archive --download-images
+</code></pre></div><p>I also like the <code>--add-source-url</code> parameter which adds the original URL of each post to the bottom of the post&rsquo;s contents. If like me you are converting them to read out-of-context then I like to have a way to remember where they originally came from</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/  --add-source-url 
+</code></pre></div><p>Finally you can choose the output format. As we&rsquo;ve seen, by default you end up with HTML files that you can open in any web browser. That&rsquo;s great if you&rsquo;re on your computer. But if you want to fulfil my actual goal of making them into an epub for reading on an ereader then probably downloading them in <a href="https://www.markdownguide.org/">markdown</a> format is a better bet. Less potential HTML cruft, and potentially a slightly more straightforward conversion to epub later on.</p>
+<p>For that, use the <code>format</code> parameter.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/  --format <span style="color:#e6db74">&#34;md&#34;</span>
+</code></pre></div><p>Plain text is another <code>--format</code>  option you can specify by replacing md with <code>txt</code></p>
+<p>There are no doubt other parameters, but those were the ones I&rsquo;ve ever needed. You can use all these parameter in conjunction with each other to get your perfect output.</p>
+<h3 id="downloading-paid-substack-articles">Downloading paid Substack articles</h3>
+<p>This is really the only potentially tricky part. Well, if you know how to locate the actual values of cookies in your web browser then it&rsquo;s simple. If not, it differs per browser - <a href="https://cookie-script.com/blog/view-cookies-browser-manually">here&rsquo;s a guide</a> that covers a few.</p>
+<p>Log into Substack on your normal web browser. Then find the contents of either the cookie called <code>substack.sid</code> or <code>connect.sid</code>, whichever is there on your computer. I had <code>substack.sid</code></p>
+<p>Now copy its value.</p>
+<p>You then add the <code>--cookie_name</code> and <code>--cookie_value</code> to the above command. The name one should be the name of the cookie (<code>substack.sid</code> in my case) and the value should just be the nonsense-looking contents of the cookie.</p>
+<p>You shouldn&rsquo;t be sharing that value with anyone else, so the one in the below example is fake. The real one was actually a lot longer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/ --cookie_name substack.sid --cookie_val sasfasfsafasfsaf924971204$210493AYx4u$nTd4mEGG.asfaspj0bgc9IU
+</code></pre></div><p>Do this correctly though and the command will log in and download the full version of all the paid posts, in addition to the free ones.</p>
+<h3 id="my-usual-command">My usual command</h3>
+<p>This then the sort of command I&rsquo;ve been using to get everything I need all together ready for ebookification:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sbstck-dl download  --url https://national.thelead.uk/ -o <span style="color:#e6db74">&#34;./downloads&#34;</span>   --download-images --image-quality low --format md  --add-source-url --cookie_name substack.sid --cookie_val abc123321xyzxxxxxxxxxx
+</code></pre></div><p>OK, that&rsquo;s the archiving complete! Enjoy.</p>
+<p>If however you want to convert your collection of downloaded substack posts (ideally in markdown format) into an epub, then here is:</p>
+<h2 id="step-2-convert-the-archive-into-an-epub-ebook">Step 2: Convert the archive into an epub ebook.</h2>
+<p>For this, we can use <a href="https://pandoc.org/">pandoc</a>, another great free and open-source tool, which is the definitive convert-between-filetypes command line tool for converting between various markup formats.</p>
+<p>Download and install the version relevant to your computer from <a href="https://pandoc.org/installing.html">here</a>. Or if, like me, you&rsquo;re a <code>winget</code> fan you can install it from your Windows computer&rsquo;s command line via:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">winget install --source winget --exact --id JohnMacFarlane.Pandoc
+</code></pre></div><p>Pandoc is an incredibly comprehensive tool so no way can we go through all the potential command line options here - for that, see <a href="https://pandoc.org/MANUAL.html">their documentation</a>. Instead I&rsquo;ll just share what worked for me when converting the output of <code>sbstck-dl</code> into epub form.</p>
+<p>What you need to do is feed in the list of files you want converting into a command you type into your command-line in this format. My examples assume you downloaded the posts in markdown format as recommended, but it should work fine enough even if in HTML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+pandoc FILE_YOU_DOWNLOADED.md -o <span style="color:#e6db74">&#34;YOUR_FILENAME.epub&#34;</span> --metadata title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TITLE_TO_GIVE_EBOOK&#34;</span> --metadata author<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;AUTHOR_TO_GIVE_EBOOK&#34;</span> --toc --split-level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</code></pre></div><p>You should replace the parts in capital letters with the actual file containing the post and values you want your epub to end up with. The <code>toc</code> and <code>split-level</code> part are all about generating a table of contents, one entry per post, which I like, but is entirely optional.</p>
+<p>Note however that if you downloaded more than 1 post you probably have several files to convert. You want them all to end up in the same book most likely. If so you can just list them all in the command in the order you want them to appear in the book like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pandoc FILE1.md FILE2.md FILE3.md -o <span style="color:#e6db74">&#34;YOUR_FILENAME.epub&#34;</span> --metadata title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TITLE_TO_GIVE_EBOOK&#34;</span> --metadata author<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;AUTHOR_TO_GIVE_EBOOK&#34;</span> --toc --split-level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</code></pre></div><p>or, more realistically for a larger substack, specificy &ldquo;all markdown files in the folder&rdquo; like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pandoc *.md -o <span style="color:#e6db74">&#34;YOUR_FILENAME.epub&#34;</span> --metadata title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TITLE_TO_GIVE_EBOOK&#34;</span> --metadata author<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;AUTHOR_TO_GIVE_EBOOK&#34;</span> --toc --split-level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</code></pre></div><p>The <code>*.md</code> simply means all files ending in .md. It doesn&rsquo;t necessarily imply a particular order. So if you want to absolutely make sure that the files end up being ordered alphanumerically in the book - which, given the file names that <code>sbstck-dl</code> produces by default is equivalent to &ldquo;in chronological order of post date&rdquo;, you can instead have the computer first assemble a list of the files in order in a variable and pass that variable to pandoc.</p>
+<p>Here&rsquo;s one way to do that that works in Windows powershell. If you are using any different operating system or command prompt then the first part won&rsquo;t work, but there will be an equivalent that does if you can find it!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+<span style="color:#75715e"># First part creates a list of all .md files in the folder, ordered by filename into a variable called $articles</span>
+
+$articles <span style="color:#f92672">=</span> Get-ChildItem -Filter <span style="color:#e6db74">&#34;*.md&#34;</span> | Where-Object <span style="color:#f92672">{</span> $_.Name -ne <span style="color:#e6db74">&#34;index.md&#34;</span> <span style="color:#f92672">}</span> | Sort-Object Name | Select-Object -ExpandProperty FullName
+
+<span style="color:#75715e"># Second part is the pandoc command, passing in your ordered list</span>
+
+pandoc $articles -o <span style="color:#e6db74">&#34;YOUR_FILENAME.epub&#34;</span> --metadata title<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;TITLE_TO_GIVE_EBOOK&#34;</span> --metadata author<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;AUTHOR_TO_GIVE_EBOOK&#34;</span> --toc --split-level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</code></pre></div><p>Once you&rsquo;ve done all the above you should be left with a nice epub file that is formatted well for your ereader! Simply upload it to your ereader and you&rsquo;re good to go.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://thebraindumpblog.com/2026/02/16/in-an-unemployed-ice-cream.html" class="u-url"><time class="dt-published" datetime="2026-02-16 09:47:38 &#43;0000">Feb 16, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://www.celebritynetworth.com/articles/entertainment-articles/in-1984-a-man-memorized-a-game-shows-secret-formula-and-won-a-fortune/">In 1984, An Unemployed Ice Cream Truck Driver Memorized A Game Show&rsquo;s Secret Winning Formula. He Then Went On The Show</a>: &hellip;and became rich, for a while.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://thebraindumpblog.com/2026/02/16/where-are-all-the-dont.html" class="u-url"><time class="dt-published" datetime="2026-02-16 08:34:17 &#43;0000">Feb 16, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://thehill.com/opinion/civil-rights/5735757-constitutional-rights-threat-immigrants/">Where are all the ‘Don’t tread on me’ Americans?</a>: &lsquo;If you oppose tyranny, the people of Minneapolis are your brothers and sisters in arms, regardless of what you think about immigration.&rsquo;</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://thebraindumpblog.com/2026/02/16/revealed-the-true-toll-of.html" class="u-url"><time class="dt-published" datetime="2026-02-16 08:26:16 &#43;0000">Feb 16, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://www.theguardian.com/society/2026/feb/15/number-uk-women-suicide-domestic-abuse-under-reported-say-experts">Revealed: The true toll of female suicides in UK with domestic abuse at their core</a>: &lsquo;Research suggests official statistics could track as few as 6.5% of the true number of cases&rsquo;</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://thebraindumpblog.com/2026/02/14/john-higgs-presents-the-illustrious.html">John Higgs presents the illustrious history of Doctor Who in his book &#39;Exterminate/Regenerate&#39;</a></h1>
 		
 
