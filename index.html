@@ -24,6 +24,125 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://thebraindumpblog.com/2026/04/17/how-to-remove-windows-s.html">How to (re)move Windows 11&#39;s supposedly &#39;unmovable&#39; files in order to shrink its disk partition</a></h1>
+		
+
+		<a href="https://thebraindumpblog.com/2026/04/17/how-to-remove-windows-s.html" class="u-url"><time class="dt-published" datetime="2026-04-17 08:21:41 &#43;0100">Apr 17, 2026</time></a>
+
+		<div class="e-content">
+			 <p>It took a while until annoyance (and ethics?) overcame my laziness, but I finally got to the point of wanting to convert my latest Windows computer into a Linux computer, or rather, given I do have a couple of Windows only programs, into a dual-boot hybrid.</p>
+<p>The final straw was when it became apparent that I&rsquo;ve lost some unspecified number of files from years ago due to some mish-mash destruction that Windows 11s' Onedrive integration seems to have caused. I can see them, but they won&rsquo;t open. Even after hours with Microsoft support staff. Oh, and why doesn&rsquo;t my wifi auto connect any more? And why don&rsquo;t my headphones work when I have a webcam plugged in? Anyway, those are all rants for another day.</p>
+<p>Anyway, the first step towards dual-booting is to reduce the size of the partition of hard drive space one uses for Windows and create a new blank one ready for Linux to use. This involves shrinking your Windows partition. Which should be easy now that Windows comes with a &ldquo;<a href="https://support.microsoft.com/en-us/windows/disk-management-in-windows-ad88ba19-f0d3-0809-7889-830f63e94405">Disk Management</a>&rdquo; program where you can right-click shrink.</p>
+<!-- raw HTML omitted -->
+<p>Naturally, it was not easy.</p>
+<p>I wanted to free up a partition of at least 100gb on my solitary hard disk, which seemed fair given I had free space of more like 250gb. However Disk Management wouldn&rsquo;t let me choose to shrink Windows by more than 15gb due to unspecified &ldquo;immovable files&rdquo;. Linux, being space-efficient, can usually run in 15gb, sure -  but no way do I want to limit myself like that. Plus my computer is my computer and I should be allowed to decide how I want it arranging! Including what files are on it and where.</p>
+<p>Cue much web-searching, and a little AIing. There is no way I can consolidate the whole experience or all my notes here, but for the sake of posterity/future me, what ended up working best was to:</p>
+<ol>
+<li>
+<p>Load up the built-in <a href="https://support.microsoft.com/en-gb/windows/disk-management-in-windows-ad88ba19-f0d3-0809-7889-830f63e94405">Windows Disk Management app</a>, right click the C: drive (my hard disk)  and choose &ldquo;Shrink volume&rdquo;. It would spin for a while and then tell me I could shrink some paltry amount of space far lower than I wanted to. Then:</p>
+</li>
+<li>
+<p>Load up the built in Windows <a href="https://learn.microsoft.com/en-us/shows/inside/event-viewer">Event Viewer</a> and click on Windows Logs. Double-click the Application category you&rsquo;ll see a massive list of events including some recent ones with a source labelled &ldquo;defrag&rdquo;. Clicking on one of the more recent ones of them will tell you the file that&rsquo;s immovable, or at least one of them. For example:</p>
+<blockquote>
+<p>A volume shrink analysis was initiated on volume Acer (C:). This event log entry details information about the last unmovable file that could limit the maximum number of reclaimable bytes.
+Diagnostic details:</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li>The last unmovable file appears to be: $Extend$Deleted\00000000000000::$DATA</li>
+</ul>
+<p>Next, websearch / AI search to decode what that unmovable file actually is and how to remove it and get rid of it.</p>
+<p>Here&rsquo;s what Event Viewer looks like when you do the above:</p>
+<!-- raw HTML omitted -->
+<p>Then go back and repeat 1 and 2 as often as necessary until disk management reports at least as much space as you want, at which point &ldquo;Shrink volume&rdquo; should work fine. This is quite boring but it took me a mere five iterations to get there.</p>
+<p>One alternative to all this would be to use a third party program of which there are several probably very nice ones - but I didn&rsquo;t feel like learning / risking that given the temperamentality of Windows I was working with an encrypted drive and so on.</p>
+<p>Below are the &ldquo;last unmovable files&rdquo; I encountered and how to solve. Note that much of this involves deleting files I had rather little clue about what exactly were. I managed to re-assure myself that I didn&rsquo;t need them, for for the sake of all things holy, please be confident you don&rsquo;t need them and it won&rsquo;t break your computer before doing likewise.</p>
+<p><strong>File: \System Volume Information{&hellip;}::$DATA</strong></p>
+<p>These are shadow copies of your data that Windows and other backup tools create for various reasons including to support the &ldquo;system protection&rdquo; feature that allows you to roll back to earlier versions of files or system restore points. Note that what I am going to decsribe will remove all of those so you won&rsquo;t be able to revert to earlier points in time. Make sure this isn&rsquo;t going to cause a problem for you! This in itself might be a deal-killer for you. But otherwise:</p>
+<p>First <a href="https://www.elevenforum.com/t/turn-on-or-off-system-protection-for-drives-in-windows-11.3598/">Disable System Protection</a> - which you can get to via Start -&gt; Create a restore point -&gt; select your hard drive -&gt; Configure -&gt; Disable</p>
+<p>Remember to turn this back on once you are done!</p>
+<p>To delete old shadow volumes, in terminal you can type e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">vssadmin delete shadows /all /quiet
+</code></pre></div><p>For me this wasn&rsquo;t enough. That&rsquo;s because I was running third party backup software that creates shadow volumes and the above wouldn&rsquo;t touch them. To get those to be deleted was surprisingly hard.</p>
+<p>In the end the workaround for that was to tell Windows that all Shadow Files must be restricted to no more than a relatively small amount of data, e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">vssadmin resize shadowstorage /MaxSize=320MB
+</code></pre></div><p>Anyway, reducing it to 320MB caused even my third-party big backup shadows to be deleted. Again, you want to undo this command when you&rsquo;re doing, setting it to a big number or UNBOUNDED.</p>
+<p>If you&rsquo;re not sure what to reset it to then <strong>BEFORE</strong> you do the above you can run the below, which will also list any shadow volumes you have. You want to have none on your relevant hard drive by the time you&rsquo;re done.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">vssadmin list shadowstorage
+</code></pre></div><p>to see what it is pre-changes.</p>
+<p><strong>File:  $Extend$Deleted...::$DATA</strong></p>
+<p>These represented a deleted file. To solve I first emptied my Recycle Bin, and then in terminal ran:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">chkdsk C: /f
+</code></pre></div><p>and rebooted at least once in order to ensure everything was flushed out and any disk errors detected. I&rsquo;m not sure if this step was truly necessary though.</p>
+<p><strong>File: \Windows\Logs\NetSetup\service.0.etl::$DATA</strong></p>
+<p>This is some log file or other that Windows network service had locked open. To dispose of this I stopped the relevant service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">net stop NetSetupSvc
+</code></pre></div><p>and force-deleted the log file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"><span style="color:#66d9ef">del</span> /f /q C:\Windows\Logs\NetSetup\service.0.etl
+</code></pre></div><p>Of course this means you lose the historic log data.</p>
+<ol start="3">
+<li>\Windows\Logs\NetSetup\service.0.etl::$DATA (Event Trace Log)</li>
+</ol>
+<p><strong>File: \pagefile.sys::$DATA</strong></p>
+<p>This is your virtual memory which your computer uses once it&rsquo;s runs out of RAM.</p>
+<p>Firstly I <a href="https://www.elevenforum.com/t/manage-virtual-memory-paging-file-in-windows-11.8618/">disabled virtual memory</a> entirely by turning off the paging file which you can find under Start -&gt; View Advanced System Settings -&gt;Advanced tab -&gt; Settings button under the Performance section -&gt; Advanced tab -&gt; Change button under Virtual Memory section -&gt; Unlick automatically manage and choose &ldquo;No paging file&rdquo; and ignore all the scary warnings.</p>
+<p>Then you have to reboot and that file should be gone. This is another setting you should absolutely remember to <strong>undo all the changes</strong> once you&rsquo;re done shrinking your partition otherwise stuff might get very flaky and crashy.</p>
+<p><strong>File  $Extend$UsnJrnl:$J:$DATA</strong></p>
+<p>This is Windows log of any changes to files on your system. It&rsquo;s used by services like Windows search I think. In any case, I deleted it with <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-usn">fsutil</a> like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">fsutil usn deletejournal /D C:
+</code></pre></div><p>Doing all the above finally meant when I ran disk management it let me shrink the Windows partition enough to create a nice big blank space for Linux. I did that, and then re-went through the above undoing the change 1 and 4.</p>
+<p>Note that if you reboot some of the journals etc. will automatically start to be re-created, so don&rsquo;t do that before sorting out your partition except where noted above. And also you might need to be in administration mode when you type in many of the above commands (Start -&gt; Terminal -&gt; right click the icon -&gt; Run as administrator)</p>
+<p>And once again - be absolutely sure you don&rsquo;t care about the manifold side effects of all these changes and deletions before doing them! They might be dangerous! Sure, they worked for me and I didn&rsquo;t mind the side effects, but who knows what kind of state anyone else&rsquo;s Windows computer is in.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://thebraindumpblog.com/2026/04/09/anthropic-develops-an-ai-model.html">Anthropic develops an AI model that is extremely good at finding and exploiting previously unknown security bugs in software</a></h1>
+		
+
+		<a href="https://thebraindumpblog.com/2026/04/09/anthropic-develops-an-ai-model.html" class="u-url"><time class="dt-published" datetime="2026-04-09 08:05:21 &#43;0100">Apr 9, 2026</time></a>
+
+		<div class="e-content">
+			 <p>In further unreassuring news, Anthropic <a href="https://www.theregister.com/2026/04/07/anthropic_all_your_zerodays_are_belong_to_us/">has developed an AI</a> that is capable of &ldquo;finding and exploiting software vulnerabilities&rdquo;. And it has found a whole lot of them.</p>
+<blockquote>
+<p>What Anthropic is describing is literally a zero-day engine: &ldquo;Engineers at Anthropic with no formal security training have asked Mythos Preview to find remote code execution vulnerabilities overnight, and woken up the following morning to a complete, working exploit.&rdquo;</p>
+</blockquote>
+<p>Unlike the rest of its products it hasn&rsquo;t released it on the internet for a free-for-all. Only trusted partners need apply. This is very certainly for the best. But also, for how long does anything truly stay secret on the internet? After all, only the other day the same company accidentally leaked all the source code for its Claude Code product.</p>
+<p><a href="https://red.anthropic.com/2026/mythos-preview/">Anthropic&rsquo;s description</a> of the vulnerabilities it found isn&rsquo;t greatly reassuring for those of us who prefer to practice safe computing either - i.e. everyone.</p>
+<blockquote>
+<p>During our testing, we found that Mythos Preview is capable of identifying and then exploiting zero-day vulnerabilities in every major operating system and every major web browser when directed by a user to do so. The vulnerabilities it finds are often subtle or difficult to detect. Many of them are ten or twenty years old, with the oldest we have found so far being a now-patched 27-year-old bug in OpenBSD—an operating system known primarily for its security.</p>
+</blockquote>
+<p>&ldquo;every major operating system and every major web browser&rdquo;!</p>
+<p>I suppose it&rsquo;s good that we know about them (if we do and if we fix them). I&rsquo;m sure human hackers and state security organisations are busy exploiting at least a few of them. Although some of them are apparently pretty complex:</p>
+<blockquote>
+<p>The exploits it constructs are not just run-of-the-mill stack-smashing exploits (though as we’ll show, it can do those too). In one case, Mythos Preview wrote a web browser exploit that chained together four vulnerabilities, writing a complex JIT heap spray that escaped both renderer and OS sandboxes. It autonomously obtained local privilege escalation exploits on Linux and other operating systems by exploiting subtle race conditions and KASLR-bypasses. And it autonomously wrote a remote code execution exploit on FreeBSD’s NFS server that granted full root access to unauthenticated users by splitting a 20-gadget ROP chain over multiple packets.</p>
+</blockquote>
+<p>It&rsquo;s not like they are unaware of what they&rsquo;ve done here. They&rsquo;re just, let&rsquo;s say, more optimistic than me.</p>
+<blockquote>
+<p>we believe that powerful language models will benefit defenders more than attackers, increasing the overall security of the software ecosystem. The advantage will belong to the side that can get the most out of these tools. In the short term, this could be attackers, if frontier labs aren’t careful about how they release these models. In the long term, we expect it will be defenders who will more efficiently direct resources and use these models to fix bugs before new code ever ships.</p>
+<p>But the transitional period may be tumultuous regardless.</p>
+</blockquote>
+<p>I&rsquo;m sure it will be.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://thebraindumpblog.com/2026/04/08/aigenerated-lego-videos-and-trumps.html" class="u-url"><time class="dt-published" datetime="2026-04-08 15:29:17 &#43;0100">Apr 8, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://www.theguardian.com/commentisfree/2026/apr/08/lego-videos-iran-trump-ai-video-meme-propaganda-movie-animation">AI-generated Lego videos and Trump’s poo-bombing: welcome to the Iran-US slopaganda wars</a>: &lsquo;When it&rsquo;s hard or impossible to identify trustworthy sources, you can choose to believe whatever you find comforting, invigorating or infuriating&rsquo;.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 
 		<a href="https://thebraindumpblog.com/2026/04/08/the-team-behind-a-proiran.html" class="u-url"><time class="dt-published" datetime="2026-04-08 09:47:47 &#43;0100">Apr 8, 2026</time></a>
 
