@@ -24,6 +24,29 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://thebraindumpblog.com/2026/04/22/making-an-external-monitor-connected.html">Making an external monitor connected via a hub work in Linux Mint</a></h1>
+		
+
+		<a href="https://thebraindumpblog.com/2026/04/22/making-an-external-monitor-connected.html" class="u-url"><time class="dt-published" datetime="2026-04-22 19:16:50 &#43;0100">Apr 22, 2026</time></a>
+
+		<div class="e-content">
+			 <p>One thing I didn&rsquo;t particularly expect during my latest transition to Linux is that whilst my laptop would work fine with an external screen if I plugged the laptop directly into the screen, the computer wouldn&rsquo;t detect or use it if I used my usual setup, which is computer -&gt; usb cable -&gt; hub -&gt; hdmi cable -&gt; screen.</p>
+<p>It turns out one may need a &ldquo;DisplayLink driver for the hub to work. For my Targus hub on Linux Mint, what worked well was:</p>
+<ol>
+<li>Go to Synaptic&rsquo;s <a href="https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu">Ubuntu Driver Download</a> page.</li>
+<li>Scroll down to find the &ldquo;Download&rdquo; button in the section labelled Synaptics APT Repository and download the &ldquo;synaptics-repository-keyring.deb&rdquo; file it offers .</li>
+<li>Then open terminal and run these 3 commands in sequence.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install ./Downloads/synaptics-repository-keyring.deb
+sudo apt update
+sudo apt install displaylink-driver
+</code></pre></div><p>That&rsquo;s assuming your file downloaded into the Downloads subfolder. Obviously change the path in the first if it did not.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 
 		<a href="https://thebraindumpblog.com/2026/04/18/us-tech-firms-successfully-lobbied.html" class="u-url"><time class="dt-published" datetime="2026-04-18 08:26:39 &#43;0100">Apr 18, 2026</time></a>
 
