@@ -24,6 +24,50 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://thebraindumpblog.com/2026/07/07/converting-between-music-file-formats.html">Converting between music file formats with ffmpeg</a></h1>
+		
+
+		<a href="https://thebraindumpblog.com/2026/07/07/converting-between-music-file-formats.html" class="u-url"><time class="dt-published" datetime="2026-07-07 08:18:42 &#43;0100">Jul 7, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://ffmpeg.org/">ffmpeg</a> is a much venerated tool for doing most anything in the world of fiddling around with audio and video files on one&rsquo;s computer. To let it <a href="https://ffmpeg.org/about.html">describe itself</a>:</p>
+<blockquote>
+<p>FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. No matter if they were designed by some standards committee, the community or a corporation.</p>
+</blockquote>
+<p>It also works on Linux, Windows, MacOS and a few other platforms you probably aren&rsquo;t using. There are slightly less official ways to <a href="https://shaunhevey.com/posts/how-to-use-ffmpeg-on-ios/">use it on iOS</a> (e.g. via <a href="https://holzschu.github.io/a-Shell_iOS/">a-Shell</a>) and <a href="https://krita-artists.org/t/how-do-i-download-ffmpeg-on-samsung-tablet/88202/6">Android</a> (e.g. via <a href="https://termux.dev/en/">Termux</a>)</p>
+<p>So far my main use-case has been to convert between music file formats. For future referenece, this is how one can convert a song from flac format to, in this case, MP3 V0. Sure you in theory lose some quality converting lossless to lossy, but the way I listen to music it really isn&rsquo;t very noticable and it dramtaically saves diskspace. One example file I used went from 42mb to 8mb.</p>
+<p>It&rsquo;s simple. First install ffmpeg. On Linux that&rsquo;s:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install ffmpeg
+</code></pre></div><p>Then you can convert a flac to a variable bit rate (VBR) MP3 (amongst a massive variety of other formats) in the following way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i your_music_file.flac -c:a libmp3lame -q:a <span style="color:#ae81ff">0</span> your_music_file.mp3
+</code></pre></div><p>The <code>-c</code> parameter is the <a href="https://ffmpeg.org/ffmpeg-codecs.html#libmp3lame-1">encoder</a> you want to use, in this case one for MP3s.
+<code>-q</code> refers to the audio quality. The 0 setting is the highest quality  for a  (VBR) MP3 but slowest to run. But it took virtually no time at all for me.</p>
+<p>If you prefer a fixed rate MP3, e.g. 320kps, you can use the <code>-b</code> parameter instead of <code>-c</code> like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ffmpeg -i your_music_file.flac -c:a libmp3lame -b:a 320k your_music_file.mp3
+</code></pre></div><p>If you want to convert all flacs in a folder to MP3s at once then you can use standard Linux CLI stuff, e.g. the below for the VBR option.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">for</span> f in *.flac; <span style="color:#66d9ef">do</span> ffmpeg -i <span style="color:#e6db74">&#34;</span>$f<span style="color:#e6db74">&#34;</span> -c:a libmp3lame -q:a <span style="color:#ae81ff">0</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>f%.flac<span style="color:#e6db74">}</span><span style="color:#e6db74">.mp3&#34;</span>;  <span style="color:#66d9ef">done</span>
+</code></pre></div><p>There are innumerable other parameters for different file formats or different options. The official <a href="https://ffmpeg.org/documentation.html">documentation</a> is one place to go to learn about them all.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://thebraindumpblog.com/2026/07/05/cryptomator-is-on-a-half.html" class="u-url"><time class="dt-published" datetime="2026-07-05 17:54:03 &#43;0100">Jul 5, 2026</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://cryptomator.org/">Cryptomator</a> is on a half price sale should anyone want a copy, or to support a worthy project on the (relatively) cheap.</p>
+<p>It&rsquo;s an excellent <a href="https://github.com/cryptomator/cryptomator">open-source</a> solution, recommended by <a href="https://www.privacyguides.org/en/encryption/#cryptomator-cloud">PrivacyGuides</a> amongst others, allowing you to easily encrypt your files in a way that&rsquo;s very compatible with the use of cloud drives.</p>
+<p>This means that Google, Microsoft or whoever you cloud with - or anyone that works for them, or any one who hacks them - cannot see the contents of your files. I would not put any sensitive file on such a drive without an application like this.</p>
+<p>The desktop software - which is available on most platforms -  is basically entirely free always. You can financially support it if you see value.</p>
+<p>The phone apps usually cost around $30 if you want to enable full write capabilities but are on sale for a while. If you can afford the $30, or more, then I&rsquo;m sure they&rsquo;d appreciate it at RRP;  it&rsquo;s a project that highly deserves funding. If $15 is your limit, go get it now!</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://thebraindumpblog.com/2026/07/05/the-usas-th-birthday-party.html">The USA&#39;s 250th birthday party echoes its 150th in unfortunate ways</a></h1>
 		
 
@@ -350,7 +394,7 @@
 			<h1><a href="https://thebraindumpblog.com/2026/06/16/explaining-social-deviance-is-a.html">Explaining Social Deviance is a 10 part run-through of answers to &#39;what makes something deviant?&#39;</a></h1>
 		
 
-		<a href="https://thebraindumpblog.com/2026/06/16/explaining-social-deviance-is-a.html" class="u-url"><time class="dt-published" datetime="2026-06-16 19:08:36 &#43;0000">Jun 16, 2026</time></a>
+		<a href="https://thebraindumpblog.com/2026/06/16/explaining-social-deviance-is-a.html" class="u-url"><time class="dt-published" datetime="2026-06-16 20:08:36 &#43;0100">Jun 16, 2026</time></a>
 
 		<div class="e-content">
 			 <p>📚 Finished reading <a href="https://micro.blog/books/9781565851894">Explaining Social Deviance</a> by Paul Root Wolpe.</p>
@@ -381,7 +425,7 @@
 			<h1><a href="https://thebraindumpblog.com/2026/06/14/unsurprisingly-the-online-safety-act.html">Unsurprisingly the Online Safety Act hasn&#39;t stopped social media companies pushing dangerous content</a></h1>
 		
 
-		<a href="https://thebraindumpblog.com/2026/06/14/unsurprisingly-the-online-safety-act.html" class="u-url"><time class="dt-published" datetime="2026-06-14 07:34:08 &#43;0000">Jun 14, 2026</time></a>
+		<a href="https://thebraindumpblog.com/2026/06/14/unsurprisingly-the-online-safety-act.html" class="u-url"><time class="dt-published" datetime="2026-06-14 08:34:08 &#43;0100">Jun 14, 2026</time></a>
 
 		<div class="e-content">
 			 <p>In case anyone was in danger of thinking that the Online Safety Act has solved the harms caused by the big social media platforms:</p>
@@ -405,7 +449,7 @@
 			<h1><a href="https://thebraindumpblog.com/2026/06/13/the-trump-administration-forces-anthropic.html">The Trump administration forces Anthropic to stop foreign nationals accessing its latest AI models</a></h1>
 		
 
-		<a href="https://thebraindumpblog.com/2026/06/13/the-trump-administration-forces-anthropic.html" class="u-url"><time class="dt-published" datetime="2026-06-13 15:19:31 &#43;0000">Jun 13, 2026</time></a>
+		<a href="https://thebraindumpblog.com/2026/06/13/the-trump-administration-forces-anthropic.html" class="u-url"><time class="dt-published" datetime="2026-06-13 16:19:31 &#43;0100">Jun 13, 2026</time></a>
 
 		<div class="e-content">
 			 <p>Yet more real life evidence as to why <a href="https://thebraindumpblog.com/2026/05/17/the-open-rights-groups-very.html">digital sovereignty</a> is a critical issue.</p>
